@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Grist - Where local meets healthy. Your culturally adaptive diet planning app for Sri Lankan cuisine.">
+  <title>Grist - Where Local Meets Healthy</title>
+
+  <!-- Primary favicon for desktops -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+  <!-- Apple touch icon for Safari and iOS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+  <!-- Android/Chrome icons -->
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/android-chrome-512x512.png">
+
+  <!-- Web manifest -->
+  <link rel="manifest" href="assets/site.webmanifest">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-content">
+      <a href="#home" class="logo">
+        <span class="logo-text">Grist</span>
+      </a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#unique">Why Grist</a>
+        <a href="#features">Features</a>
+        <a href="#process">How It Works</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="menu-btn" id="menuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <span class="badge">Nutrition Made Local</span>
+        <h1>Where Local Meets Healthy</h1>
+        <p>Transform your eating habits with personalized meal plans that celebrate Sri Lankan cuisine while achieving your health goals.</p>
+        <div class="hero-cta">
+          <a href="#about" class="btn-main">Learn More</a>
+          <a href="#contact" class="btn-ghost">Get Started</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="phone-frame">
+          <img src="assets/picture.jpg" alt="Grist App Interface" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-container">
+      <div class="about-left">
+        <span class="tag">The Challenge</span>
+        <h2>Why Traditional Diet Apps Fail Sri Lankans</h2>
+        <p>Most diet apps recommend expensive Western ingredients like Greek yogurt, quinoa, and exotic berries. These don't align with our eating patterns or budgets.</p>
+        <p>Over 60% of Sri Lankans prefer traditional foods, yet meal planning apps ignore local cuisine entirely.</p>
+        <div class="solution-box">
+          <h4>Our Solution</h4>
+          <p>Grist combines modern nutritional science with the richness of Sri Lankan cuisine, making healthy eating accessible and affordable.</p>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="stat-card">
+          <h3>60%+</h3>
+          <p>Sri Lankans prefer traditional foods daily</p>
+        </div>
+        <div class="stat-card">
+          <h3>100%</h3>
+          <p>Focus on local ingredient availability</p>
+        </div>
+        <div class="stat-card">
+          <h3>Free</h3>
+          <p>All core features at no cost</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Unique Value Section -->
+  <section class="unique" id="unique">
+    <div class="unique-header">
+      <span class="tag">What Sets Us Apart</span>
+      <h2>Built For Sri Lankan Lifestyles</h2>
+    </div>
+    <div class="unique-cards">
+      <div class="value-card">
+        <div class="icon-wrap green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <h3>Local-First Ingredients</h3>
+        <p>Every meal plan uses ingredients from your nearest market. No expensive imports required.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon-wrap orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/>
+            <path d="M12 18V6"/>
+          </svg>
+        </div>
+        <h3>Budget Optimization</h3>
+        <p>AI-powered algorithms create nutritious plans that fit your budget perfectly.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon-wrap purple">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+          </svg>
+        </div>
+        <h3>Smart Substitutions</h3>
+        <p>Replace Western foods with nutritionally equivalent local alternatives automatically.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon-wrap pink">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <h3>Cultural Respect</h3>
+        <p>From rice and curry to kottu, we celebrate your food traditions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="features-header">
+      <span class="tag">Core Features</span>
+      <h2>Everything For Your Health Journey</h2>
+    </div>
+    <div class="features-list">
+      <div class="feature">
+        <div class="feature-num">01</div>
+        <div class="feature-content">
+          <h3>Personalized Meal Plans</h3>
+          <p>Weekly plans tailored to your goals, preferences, and budget.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-num">02</div>
+        <div class="feature-content">
+          <h3>Nutrition Tracking</h3>
+          <p>Complete monitoring of calories, macros, and micronutrients.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-num">03</div>
+        <div class="feature-content">
+          <h3>Smart Shopping Lists</h3>
+          <p>Auto-generated, organized lists for efficient market trips.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-num">04</div>
+        <div class="feature-content">
+          <h3>Recipe Library</h3>
+          <p>Hundreds of recipes using familiar Sri Lankan ingredients.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-num">05</div>
+        <div class="feature-content">
+          <h3>Meal Reminders</h3>
+          <p>Custom notifications to keep you on track.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-num">06</div>
+        <div class="feature-content">
+          <h3>Expert Guidance</h3>
+          <p>Connect with dieticians for professional advice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process" id="process">
+    <div class="process-header">
+      <span class="tag light">Simple Process</span>
+      <h2>How Grist Works</h2>
+    </div>
+    <div class="steps-wrapper">
+      <div class="step-line"></div>
+      <div class="step">
+        <div class="step-circle">1</div>
+        <div class="step-info">
+          <h3>Set Your Goals</h3>
+          <p>Share your health objectives, dietary needs, medical conditions, and budget.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-circle">2</div>
+        <div class="step-info">
+          <h3>Receive Your Plan</h3>
+          <p>AI generates personalized weekly meals using affordable local ingredients.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-circle">3</div>
+        <div class="step-info">
+          <h3>Shop Locally</h3>
+          <p>Use your custom list to buy exactly what you need from nearby markets.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-circle">4</div>
+        <div class="step-info">
+          <h3>Cook & Thrive</h3>
+          <p>Follow easy recipes, track progress, and watch your health transform.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="cta-box">
+      <h2>Ready To Transform Your Health?</h2>
+      <p>Join Grist and discover healthy eating with familiar Sri Lankan ingredients.</p>
+      <a href="#contact" class="btn-main large">Get Early Access</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-grid">
+      <div class="contact-left">
+        <span class="tag">Get In Touch</span>
+        <h2>Let's Connect</h2>
+        <p>Questions about Grist? We'd love to hear from you.</p>
+        <div class="contact-info">
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>hello@grist.lk</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form class="form" id="contactForm">
+          <div class="form-grid">
+            <input type="text" name="user_name" placeholder="Your Name" required />
+            <input type="email" name="user_email" placeholder="Your Email" required />
+          </div>
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn-main">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3 class="logo-text">Grist</h3>
+        <p>Where local meets healthy</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#process">How It Works</a>
+        <a href="#about">About</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="#contact">Contact</a>
+        <a href="#">FAQ</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Grist. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
